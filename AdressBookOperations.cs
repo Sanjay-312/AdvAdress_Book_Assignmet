@@ -92,7 +92,7 @@ namespace ADOassignmnet
                         person.zip =Convert.ToInt64(reader["Zip"]);
                         person.phone_number =Convert.ToInt64(reader["Phone"]);
                         person.email_id = Convert.ToString(reader["Email"]);
-
+                        Console.WriteLine("----------------------------------------);
                         Console.WriteLine(person.id);
                         Console.WriteLine(person.first_name);
                         Console.WriteLine(person.last_name);

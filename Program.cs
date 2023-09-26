@@ -5,6 +5,7 @@
         static void Main(string[] args)
         {
             //AdressBookOperations.create_database();
+            AdressBookOperations.create_table();
             
         }
     }

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADOassignmnet", "ADOassignmnet.csproj", "{F249D44B-F9CF-495D-B1F0-B8EC3FEC3CCC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F249D44B-F9CF-495D-B1F0-B8EC3FEC3CCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F249D44B-F9CF-495D-B1F0-B8EC3FEC3CCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F249D44B-F9CF-495D-B1F0-B8EC3FEC3CCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F249D44B-F9CF-495D-B1F0-B8EC3FEC3CCC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1097D262-9F48-4F53-A1E3-35AEB602FC18}
+	EndGlobalSection
+EndGlobal

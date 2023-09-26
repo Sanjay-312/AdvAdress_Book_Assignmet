@@ -58,6 +58,16 @@ namespace ADOassignmnet
             connection.Close();
         }
 
+        public static void delete_contact()
+        {
+            string query = "delete from Adress_Book_Table where First_name='pavan'";
+            SqlCommand cmd=new SqlCommand(query, connection);
+            connection.Open();
+            cmd.ExecuteNonQuery();
+            Console.WriteLine("deleted row succesfully");
+            Console.WriteLine("-----------------------");
+            connection.Close();
+        }
     }
 
 }

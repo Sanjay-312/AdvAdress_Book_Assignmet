@@ -11,8 +11,8 @@ namespace ADOassignmnet
     {
         public static void create_database()
         {
-           
-           SqlConnection connection = new SqlConnection("data source=(localDB)\\MSSQLLocalDB; initial catalog=master; integrated security=true");
+
+            SqlConnection connection = new SqlConnection("data source=(localDB)\\MSSQLLocalDB; initial catalog=master; integrated security=true");
             string query = "create database Address_Book_Service";
             SqlCommand cmd = new SqlCommand(query, connection);
             connection.Open();
@@ -38,16 +38,26 @@ namespace ADOassignmnet
 
         public static void insert_contact()
         {
-            string query = "insert into Adress_Book_Table values('Sanjeeva','Bodagalla','3-1-31/1 allagadda','Kurnool','Andhra Pradesh',518543,8522037306,'sanjeevabodagalla@gmail.com') ";
-            SqlCommand cmd= new SqlCommand(query, connection);
+            string query = "insert into Adress_Book_Table values('pavan','kumar','3-9-8 lm compound','Kurnool','Andhra Pradesh',518543,8341595950,'pavankumar@gmail.com') ";
+            SqlCommand cmd = new SqlCommand(query, connection);
             connection.Open();
             cmd.ExecuteNonQuery();
             Console.WriteLine("data inserted successfully");
             Console.WriteLine("--------------------------");
             connection.Close();
         }
-    }
-    
 
+        public static void update_contact()
+        {
+            string query = "update Adress_Book_Table set City='Hyderabad' where First_name='pavan'";
+            SqlCommand cmd = new SqlCommand(query, connection);
+            connection.Open();
+            cmd.ExecuteNonQuery();
+            Console.WriteLine("data updated successfully");
+            Console.WriteLine("-------------------------");
+            connection.Close();
+        }
+
+    }
 
 }

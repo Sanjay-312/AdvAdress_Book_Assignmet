@@ -6,8 +6,8 @@
         {
             //AdressBookOperations.create_database();
             //AdressBookOperations.create_table();
-            AdressBookOperations.insert_contact();
-            
+            //AdressBookOperations.insert_contact();
+            AdressBookOperations.update_contact();
         }
     }
 }

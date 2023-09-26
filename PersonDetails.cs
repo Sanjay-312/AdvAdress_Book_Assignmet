@@ -13,7 +13,7 @@ namespace ADOassignmnet
         public string address { get; set; }
         public string city { get; set; }
         public string state { get; set; }
-        public int zip { get; set; }
+        public long zip { get; set; }
         public long phone_number { get; set; }
         public string email_id { get; set; } 
     }

@@ -8,7 +8,8 @@
             //AdressBookOperations.create_table();
             //AdressBookOperations.insert_contact();
             //AdressBookOperations.update_contact();
-            AdressBookOperations.delete_contact();
+            //AdressBookOperations.delete_contact();
+            AdressBookOperations.retrieve_data();
         }
     }
 }

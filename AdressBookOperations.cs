@@ -68,6 +68,46 @@ namespace ADOassignmnet
             Console.WriteLine("-----------------------");
             connection.Close();
         }
+
+        public static void retrieve_data()
+        {
+           using(connection)
+            {
+                PersonDetails person=new PersonDetails();
+                string query = "select * from Adress_Book_Table where city='Kurnool'";
+                SqlCommand cmd=new SqlCommand(query, connection);
+                connection.Open();
+                SqlDataReader reader=cmd.ExecuteReader();
+                if(reader.HasRows)
+                {
+                    Console.WriteLine("------data------");
+                    while(reader.Read())
+                    {
+                        person.id = Convert.ToInt16(reader["id"]);
+                        person.first_name = Convert.ToString(reader["First_Name"]);
+                        person.last_name = Convert.ToString(reader["Last_Name"]);
+                        person.address = Convert.ToString(reader["Address"]);
+                        person.city = Convert.ToString(reader["City"]);
+                        person.state = Convert.ToString(reader["State"]);
+                        person.zip =Convert.ToInt64(reader["Zip"]);
+                        person.phone_number =Convert.ToInt64(reader["Phone"]);
+                        person.email_id = Convert.ToString(reader["Email"]);
+
+                        Console.WriteLine(person.id);
+                        Console.WriteLine(person.first_name);
+                        Console.WriteLine(person.last_name);
+                        Console.WriteLine(person.address);
+                        Console.WriteLine(person.city);
+                        Console.WriteLine(person.state);
+                        Console.WriteLine(person.zip);
+                        Console.WriteLine(person.phone_number);
+                        Console.WriteLine(person.email_id);
+                    }
+                }
+                connection.Close();
+            }
+
+        }
     }
 
 }
